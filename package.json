@@ -1,9 +1,9 @@
 {
-  "name": "SC-PublicSite",
+  "name": "@sematicclarity/SC-PublicSite",
   "displayVersion": "Semantic Clarity",
   "version": "1.0.0",
   "description": "The Semantic Clarity Public site SPA",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "start": "webpack-dev-server",
     "dev": "webpack --mode development",
@@ -21,7 +21,14 @@
     "John Walker <jwalker@semanticclarity.com>",
     "Bob Warren <jedi.master@augmentedjs.com>"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtwalker2000/SC-PublicSite.git"
+  },
   "license": "Apache-2.0",
+  "engines": {
+    "node": "12.x.x"
+  },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
