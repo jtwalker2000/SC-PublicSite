@@ -14,45 +14,6 @@
   --border-color: rgba(255,255,255,0.2);
 }
 
-.panel {
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-}
-
-.menu {
-  font-size: 1rem;
+body {
   color: var(--light-text);
-  top: -1rem;
-  background-color: rgba(0, 0, 0, 0.85);
-
-  i.material-icons.md-dark {
-    color: rgba(255, 255, 255, 0.55);
-  }
-  div:first-child {
-    color: var(--secondary-color-light);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  div.spacer {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  div:hover {
-    background-color: var(--secondary-color-dark);
-  }
-}
-
-table {
-  &.material {
-    background-color: var(--table-background);
-    td, th {
-      color: var(--app-text);
-      &:hover {
-        color: var(--app-text);
-        background-color: var(--secondary-color-dark);
-      }
-    }
-  }
-}
-
-a {
-  color: var(--secondary-color-light);
 }
