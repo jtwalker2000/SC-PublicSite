@@ -1,5 +1,5 @@
 {
-  "name": "@semanticclarity/SC-PublicSite",
+  "name": "@semanticclarity/sc-publicsite",
   "displayVersion": "Semantic Clarity",
   "version": "1.0.0",
   "description": "The Semantic Clarity Public site SPA",
