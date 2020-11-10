@@ -6,4 +6,6 @@ test
 devserver.js
 webpackData.js
 webpack.config.js
+middleware.js
 .babelrc
+lib

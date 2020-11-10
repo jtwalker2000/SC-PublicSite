@@ -1,3 +1,10 @@
-export const APP_NAME = "My Application";
-export const AUTHOR = "Me";
-export const DIALOG_EL = "#dialogs";
+export const HAMBURGER_ITEMS = [
+  {
+    "id": "home",
+    "event": "home",
+    "icon": "home",
+    "name": "Home",
+    "spacer": false,
+    "title": "Go to homepage"
+  }
+];

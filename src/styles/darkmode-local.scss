@@ -1,0 +1,60 @@
+/* set these for the app's branding */
+:root {
+  /*
+  --primary-color: #ffb300;
+  --primary-color-dark: #c68400;
+  --primary-color-light: #ffe54c;
+  */
+  --secondary-color: #BDBDBD;
+  --secondary-color-dark: #616161;
+  --secondary-color-light: #EEEEEE;
+  --background-color: #404040;
+  --app-color: #0D0D0D;
+  --panel-color: #0D0D0D;
+  --app-text: rgba(255,255,255,0.85);
+  --border-color: rgba(255,255,255,0.2);
+
+  --button-color: white;
+  --button-hover-color: #d0d0d0;
+
+  --dock-color: rgba(255,255,255,0.1);
+  --dock-text: rgba(255,255,255,0.85);
+  --dock-border: rgba(255,255,255,0.2);
+}
+
+/* recolor logo */
+.about > figure.logo {
+  background: url("../images/elements-light.png") 100% center no-repeat;
+  background-size: contain;
+}
+
+/* recolor based on choices */
+button {
+  color: var(--dark-text);
+  background-color: var(--button-color);
+  &:hover {
+    color: var(--dark-text);
+    background-color: var(--button-hover-color);
+  }
+
+  &.primary {
+    color: var(--light-text);
+    &:hover {
+      background-color: var(--primary-color-light);
+      color: var(--dark-text);
+    }
+  }
+
+  &.secondary {
+    color: var(--dark-text);
+  }
+}
+
+/* set a light dot vs dark */
+.dock {
+  button {
+    &.highlight {
+      background-image: url("../images/dot-light.png");
+    }
+  }
+}
