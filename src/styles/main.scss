@@ -10,13 +10,8 @@
   --background-color: #F5F5F5;
   --app-color: #EEEEEE;
   --panel-color: #E0E0E0;
-  --table-background: #E0E0E0;
   --app-text: rgba(0,0,0,0.85);
   --border-color: rgba(0,0,0,0.2);
-
-  --dock-color: rgba(0,0,0,0.1);
-  --dock-text: rgba(0,0,0,0.85);
-  --dock-border: rgba(255,255,255,0.85);
 }
 
 /* app stuff */
@@ -27,7 +22,7 @@ body {
 }
 
 .logo {
-  background: url("../images/elements.png") 100% center no-repeat;
+  background: url("../images/logo.png") 100% center no-repeat;
   background-size: contain;
 }
 
@@ -44,13 +39,6 @@ body {
   }
 }
 
-form {
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  width: 20rem;
-}
-
 /* recolor based on my choices */
 button {
   margin: 0;
@@ -65,49 +53,10 @@ button {
   backdrop-filter: blur(5px);
 }
 
-.dock {
-  text-align: center;
-  background-color: var(--dock-color);
-  width: auto;
-  height: 3rem;
-  margin: 0.5rem auto;
-  border-radius: 0.5rem;
-  border: 1px solid var(--dock-border);
-  position: fixed;
-  bottom: 1rem;
-  /* left: calc(50% - 14.75rem); */
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-
-  button {
-    display: inline-block;
-    border: none;
-    box-shadow: none;
-    vertical-align: top;
-    background-color: transparent;
-    margin: 0;
-    position: relative;
-    top: 0.4rem;
-    left: auto;
-    right: auto;
-    color: var(--dock-text);
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
-    &:hover {
-      color: var(--secondary-color-dark);
-      background-color: transparent;
-    }
-
-    &.highlight {
-      background-image: url("../images/dot-dark.png");
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      background-position-y: bottom;
-    }
-
-    > i.material-icons {
-      font-size: 2rem;
-    }
+.home {
+  .hero {
+    background: url("../images/dreamstime.jpg") 50% center no-repeat;
+    background-size: contain;
   }
 }
 

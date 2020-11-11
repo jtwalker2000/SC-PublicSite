@@ -16,17 +16,15 @@
 
   --button-color: white;
   --button-hover-color: #d0d0d0;
-
-  --dock-color: rgba(255,255,255,0.1);
-  --dock-text: rgba(255,255,255,0.85);
-  --dock-border: rgba(255,255,255,0.2);
 }
 
 /* recolor logo */
+/* example
 .about > figure.logo {
   background: url("../images/elements-light.png") 100% center no-repeat;
   background-size: contain;
 }
+*/
 
 /* recolor based on choices */
 button {
@@ -47,14 +45,5 @@ button {
 
   &.secondary {
     color: var(--dark-text);
-  }
-}
-
-/* set a light dot vs dark */
-.dock {
-  button {
-    &.highlight {
-      background-image: url("../images/dot-light.png");
-    }
   }
 }
