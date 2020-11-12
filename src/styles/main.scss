@@ -1,12 +1,12 @@
 /* Main CSS for app - light mode */
 :root {
-  --primary-color: #009688;
-  --primary-color-darker: #004D40;
-  --primary-color-dark: #00796B;
-  --primary-color-light: #4DB6AC;
-  --secondary-color: #FFEB3B;
-  --secondary-color-dark: #FBC02D;
-  --secondary-color-light: #FFF176;
+  --primary-color: #03A9F4;
+  --primary-color-darker: #B3E5FC;
+  --primary-color-dark: #4FC3F7;
+  --primary-color-light: #0277BD;
+  --secondary-color: #FFB300;
+  --secondary-color-dark: #FFD54F;
+  --secondary-color-light: #FF6F00;
   --background-color: #F5F5F5;
   --app-color: #EEEEEE;
   --panel-color: #E0E0E0;
@@ -34,8 +34,9 @@ body {
 
 .main {
   &.panel {
-    height: calc(100vh - 7rem);
+    height: calc(100vh - 5rem);
     overflow: auto;
+    margin: 0;
   }
 }
 
@@ -45,6 +46,15 @@ button {
   &.secondary {
     color: var(--dark-text);
   }
+}
+
+.buttonBar {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+
+  text-align: center;
 }
 
 /* add blur to menu and dialog backgrounds */
@@ -63,6 +73,7 @@ button {
 .header {
   display: flex;
   flex-direction: row;
+  margin: 0;
 
   .navigation {
     ul {
