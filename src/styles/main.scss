@@ -60,6 +60,28 @@ button {
   }
 }
 
+.header {
+  display: flex;
+  flex-direction: row;
+
+  .navigation {
+    ul {
+      li {
+        padding: 0.75rem 0.5rem;
+        color: var(--app-text);
+        text-align: right;
+
+        i {
+          color: var(--app-text);
+          padding-right: 0.25rem;
+        }
+      }
+    }
+  }
+}
+
+@import "./navigation.scss";
+
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   @import "~presentation-css-dark";

@@ -1,0 +1,30 @@
+.navigation {
+  display: block;
+  position: relative;
+  margin: 0;
+  flex-grow: 1;
+
+  ul {
+    display: flex;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    li {
+      display: block;
+      /*max-width: 12rem;*/
+      color: var(--secondary-color);
+      text-transform: lowercase;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-size: 1.25rem;
+      font-weight: 300;
+      transition: color 0.5s ease, border 0.25s ease, font-weight 0.5s ease;
+      border-bottom: 0;
+      &:hover {
+        border-bottom: 2px solid var(--secondary-color-light);
+        color: var(--secondary-color-light);
+      }
+    }
+  }
+}

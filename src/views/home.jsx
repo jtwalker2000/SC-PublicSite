@@ -12,7 +12,7 @@ class Home extends Elements.Component {
       <div id={this.props.id} name={this.props.name} className="home">
         <Hero/>
         <ButtonBar>
-          <Button id="b" name="b" className="test" icon="chat" title="Contact Us" kind="secondary">&nbsp;Contact Us Today</Button>
+          <Button name="contact" id="contact" icon="chat" title="Contact Us" kind="secondary">&nbsp;Contact Us Today</Button>
         </ButtonBar>
       </div>
     );

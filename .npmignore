@@ -9,3 +9,4 @@ webpack.config.js
 middleware.js
 .babelrc
 lib
+legacy

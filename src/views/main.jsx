@@ -16,7 +16,7 @@ class Main extends Elements.Component {
   render() {
     return (
       <Article name={this.props.name} id={this.props.id} className={this.props.className}>
-        <Appbar name="appbar" mediator={Mediator} channel={CHANNEL_HEADER} identifier={CHANNEL_HEADER}/>
+        <Appbar name="appbar" id="appbar" mediator={Mediator} channel={CHANNEL_HEADER} identifier={CHANNEL_HEADER}/>
         <Panel name="main" id="main" className="main"/>
         <Dialogs name={CHANNEL_DIALOGS} id="dialogs" mediator={Mediator} channel={CHANNEL_DIALOGS} identifier={CHANNEL_DIALOGS}/>
       </Article>

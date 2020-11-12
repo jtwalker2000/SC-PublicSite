@@ -1,7 +1,5 @@
 import { Elements } from "@augmentedjs/elements";
-import { DISPLAY_ABOUT } from "@augmentedjs/elements-dialogs";
-import { Heading, Avatar } from "@augmentedjs/elements-components";
-import { Menu } from "@augmentedjs/elements-navigation";
+import { Navigation } from "@augmentedjs/elements-navigation";
 import { Appbar as BaseAppbar } from "@augmentedjs/elements-appbar";
 /* custom */
 import HamburgerMenu from "./nav.jsx";
@@ -16,11 +14,10 @@ class Appbar extends Elements.Component {
   render() {
     console.debug("render");
     return (
-      <BaseAppbar name={this.props.name} mediator={this.props.mediator}
+      <BaseAppbar id={this.props.id} name={this.props.name} mediator={this.props.mediator}
           channel={this.props.channel} identifier={this.props.identifier} notification>
-        <Menu items={HAMBURGER_ITEMS}/>
-        <Heading level="1" className="appname">{APP_TITLE}</Heading>
-        <HamburgerMenu id="menu" name="ham" title={APP_NAME} items={HAMBURGER_ITEMS}/>
+        <HamburgerMenu id="hamburger" name="hamburger" title={APP_NAME} items={HAMBURGER_ITEMS}/>
+        <Navigation id="menu" name="menu" items={MENU_ITEMS}/>
       </BaseAppbar>
     );
   };
