@@ -1,17 +1,18 @@
 /* Main CSS for app - light mode */
 :root {
-  --primary-color: #03A9F4;
-  --primary-color-darker: #B3E5FC;
-  --primary-color-dark: #4FC3F7;
-  --primary-color-light: #0277BD;
-  --secondary-color: #FFB300;
-  --secondary-color-dark: #FFD54F;
-  --secondary-color-light: #FF6F00;
+  --primary-color: #03a9f4;
+  --primary-color-darker: #002f6c;
+  --primary-color-dark: #007ac1;
+  --primary-color-light: #67daff;
+  --secondary-color: #ff9800;
+  --secondary-color-dark: #c66900;
+  --secondary-color-light: #ffc947;
   --background-color: #F5F5F5;
   --app-color: #EEEEEE;
   --panel-color: #E0E0E0;
   --app-text: rgba(0,0,0,0.85);
   --border-color: rgba(0,0,0,0.2);
+  --hero-color: #001144;
 }
 
 /* app stuff */
@@ -22,52 +23,8 @@ body {
 }
 
 .logo {
-  background: url("../images/logo.png") 100% center no-repeat;
+  background: url("../images/icon.png") 100% center no-repeat;
   background-size: contain;
-}
-
-.about > figure.logo {
-  width: 4rem;
-  height: 4rem;
-  margin: auto;
-}
-
-.main {
-  &.panel {
-    height: calc(100vh - 5rem);
-    overflow: auto;
-    margin: 0;
-  }
-}
-
-/* recolor based on my choices */
-button {
-  margin: 0;
-  &.secondary {
-    color: var(--dark-text);
-  }
-}
-
-.buttonBar {
-  margin: 1rem 0;
-  padding: 1rem 0;
-  border-top: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
-
-  text-align: center;
-}
-
-/* add blur to menu and dialog backgrounds */
-.blur, .wrapper .material-design-hamburger.model .material-design-hamburger__icon {
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-}
-
-.home {
-  .hero {
-    background: url("../images/dreamstime.jpg") 50% center no-repeat;
-    background-size: contain;
-  }
 }
 
 .header {
@@ -87,6 +44,99 @@ button {
           padding-right: 0.25rem;
         }
       }
+    }
+  }
+
+  .company {
+    display: flex;
+    position: relative;
+    height: 100%;
+    img {
+      height: 75%;
+      margin: 0.4rem 0.5rem;
+    }
+  }
+  h1 {
+    margin: 0;
+    flex-grow: 2;
+    position: relative;
+    text-transform: lowercase;
+    font-weight: 100;
+    font-family: "Montserrat", "Roboto", "Helvetica", sans-serif;
+    span {
+      &.highlight {
+        color: white;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.about > figure.logo {
+  width: 4rem;
+  height: 4rem;
+  margin: auto;
+}
+
+.main {
+  &.panel {
+    height: calc(100vh - 5rem);
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* recolor based on my choices */
+button {
+  margin: 0;
+  font-family: "Montserrat", "Roboto", "Helvetica", sans-serif;
+  &.secondary {
+    color: var(--dark-text);
+  }
+}
+
+.buttonBar {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  text-align: center;
+}
+
+/* add blur to menu and dialog backgrounds */
+.blur, .wrapper .material-design-hamburger.model .material-design-hamburger__icon {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+/* hamburger */
+.menu > div:nth-child(1) {
+  text-transform: lowercase;
+  font-weight: 100;
+  font-family: "Montserrat", "Roboto", "Helvetica", sans-serif;
+  color: var(--primary-color-light) !important;
+}
+
+.home {
+  .hero {
+    background: url("../images/dreamstime.jpg") 75% center no-repeat var(--hero-color);
+    background-size: contain;
+    // background-blend-mode: multiply;
+    height: 20rem;
+    margin: 0;
+    padding: 1rem 25%;
+
+    h1 {
+      font-size: 3rem;
+      line-height: 4.5rem;
+      margin: 4rem 0 1rem 0;
+      color: var(--app-text);
+    }
+    h2 {
+      font-size: 2rem;
+      line-height: 4rem;
+      color: var(--app-text);
     }
   }
 }

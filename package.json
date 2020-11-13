@@ -72,6 +72,8 @@
     "presentation-css": "^4.15.1",
     "presentation-css-dark": "^4.11.0",
     "typeface-libre-franklin": "^1.1.13",
+    "typeface-montserrat": "^1.1.13",
+    "typeface-muli": "^1.1.13",
     "typeface-roboto": "^1.1.13"
   },
   "bugs": {

@@ -14,8 +14,10 @@ Elements.render(<Main id="article" name="main" className="article"/>, document.g
 window.addEventListener("load", (event) => {
   console.debug("DOM fully loaded and parsed, and painted, swaping fonts");
   /* fonts */
-  import("typeface-libre-franklin");
-  import("typeface-roboto");
+  import("typeface-muli");
+  import("typeface-montserrat");
+  // import("typeface-libre-franklin");
+  // import("typeface-roboto");
   // init the router
   router();
 });
