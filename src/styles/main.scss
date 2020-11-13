@@ -120,9 +120,9 @@ button {
 
 .home {
   .hero {
-    background: url("../images/dreamstime.jpg") 75% center no-repeat var(--hero-color);
-    background-size: contain;
-    // background-blend-mode: multiply;
+    background: url("../images/dreamstime.jpg") 75% center no-repeat, url("../images/abstractTech.jpg") 0 center no-repeat var(--hero-color);
+    background-size: contain, cover;
+    background-blend-mode: normal, multiply;
     height: 20rem;
     margin: 0;
     padding: 1rem 25%;
