@@ -11,7 +11,8 @@
   */
   --background-color: #404040;
   --app-color: #0D0D0D;
-  --panel-color: #0D0D0D;
+  --panel-color: #a0a0a0;
+  --panel-text: rgba(0,0,0,0.85);
   --app-text: rgba(255,255,255,0.85);
   --border-color: rgba(255,255,255,0.85);
 
@@ -31,6 +32,11 @@ body {
 }
 */
 
+.card {
+  h1 {
+    color: var(--primary-color-dark);
+  }
+}
 /* recolor based on choices */
 button {
   color: var(--dark-text);

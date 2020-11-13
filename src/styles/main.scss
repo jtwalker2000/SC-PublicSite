@@ -10,6 +10,7 @@
   --background-color: #F5F5F5;
   --app-color: #EEEEEE;
   --panel-color: #E0E0E0;
+  --panel-text: rgba(0,0,0,0.85);
   --app-text: rgba(0,0,0,0.85);
   --border-color: rgba(0,0,0,0.2);
   --hero-color: #001144;
@@ -99,9 +100,41 @@ button {
 .buttonBar {
   margin: 1rem 0;
   padding: 1rem 0;
-  border-top: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
   text-align: center;
+
+  &.section {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+  }
+}
+
+.card {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  max-width: 50rem;
+  min-width: 13rem;
+  padding: 4rem;
+  margin: 1rem !important;
+  background-color: var(--panel-color) !important;
+  color: var(--panel-text);
+  min-height: 18rem;
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .buttonBar {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: calc(100% - 8rem);
+    button {
+      display: inline-block;
+      position: relative;
+    }
+  }
 }
 
 /* add blur to menu and dialog backgrounds */
