@@ -20,7 +20,7 @@
 
 body {
   color: var(--app-text);
-  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial Nue", "Arial", "sans-serif";
+  font-family: "Muli", "Roboto", "Helvetica Neue", "Helvetica", "Arial Nue", "Arial", "sans-serif";
 }
 
 .logo {
@@ -81,7 +81,7 @@ body {
 
 .main {
   &.panel {
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 3rem);
     overflow: auto;
     margin: 0;
     padding: 0;
@@ -103,6 +103,7 @@ button {
   text-align: center;
 
   &.section {
+    min-height: auto;
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
   }
@@ -133,6 +134,30 @@ button {
     button {
       display: inline-block;
       position: relative;
+    }
+  }
+}
+
+.section {
+  min-height: 25rem;
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 3rem;
+    margin: 0 0 2rem 0;
+    background-color: var(--primary-color-darker);
+    color: var(--app-text);
+  }
+  p, figure {
+    margin: 1rem auto;
+    min-width: 13rem;
+    max-width: 75rem;
+  }
+
+  figure {
+    img {
+      margin: 1rem;
     }
   }
 }
