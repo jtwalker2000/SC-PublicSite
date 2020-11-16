@@ -2,14 +2,14 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+// const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 const HtmlWebpackPartialsPlugin = require("html-webpack-partials-plugin");
 const WebpackPwaManifest = require("webpack-pwa-manifest");
 const ScriptExtHtmlWebpackPlugin = require("script-ext-html-webpack-plugin");
-
-const TerserJSPlugin = require("terser-webpack-plugin");
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+//
+// const TerserJSPlugin = require("terser-webpack-plugin");
+// const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 const devServer = require("./devServer.js");
 const middleware = require("./middleware.js");
@@ -26,8 +26,7 @@ module.exports = {
   entry: ["./src/index.jsx"],
   context: __dirname,
   output: {
-    filename: "bundle.js",
-    chunkFilename: "[name].js"
+    filename: "bundle.js"
   },
   devServer: {
     contentBase: path.join(__dirname, "dist"),
@@ -88,7 +87,7 @@ module.exports = {
   stats: "errors-only",
   devtool: isProd ? false : "source-map",
   plugins: [
-    new CleanWebpackPlugin(),
+    // new CleanWebpackPlugin(),
     new webpack.DefinePlugin({
       VERSION: JSON.stringify(Package.version),
       APP_NAME: JSON.stringify("Semantic Clarity"),
@@ -178,32 +177,5 @@ module.exports = {
         }
       ]
     })
-  ],
-  // optimization
-  optimization: !isProd ? {
-  } :
-  {
-    minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
-    providedExports: true,
-    usedExports: true,
-    runtimeChunk: "single",
-    splitChunks: {
-      chunks: "all",
-      maxInitialRequests: Infinity,
-      minSize: 0,
-      cacheGroups: {
-        vendor: {
-          test: /[\\/]node_modules[\\/]/,
-          name(module) {
-            // get the name. E.g. node_modules/packageName/not/this/part.js
-            // or node_modules/packageName
-            const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
-
-            // npm package names are URL-safe, but some servers don"t like @ symbols
-            return `vendor.${packageName.replace("@", "")}`;
-          }
-        }
-      }
-    }
-  }
+  ]
 };

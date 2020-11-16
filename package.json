@@ -1,7 +1,7 @@
 {
   "name": "@semanticclarity/sc-publicsite",
   "displayVersion": "Semantic Clarity",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The Semantic Clarity Public site SPA",
   "main": "index.jsx",
   "scripts": {
@@ -71,10 +71,8 @@
     "material-icons": "^0.3.1",
     "presentation-css": "^4.15.1",
     "presentation-css-dark": "^4.11.0",
-    "typeface-libre-franklin": "^1.1.13",
     "typeface-montserrat": "^1.1.13",
-    "typeface-muli": "^1.1.13",
-    "typeface-roboto": "^1.1.13"
+    "typeface-muli": "^1.1.13"
   },
   "bugs": {
     "url": "https://github.com/@semanticclarity/sc-publicsite/issues"

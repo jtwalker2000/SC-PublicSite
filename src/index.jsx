@@ -16,8 +16,6 @@ window.addEventListener("load", (event) => {
   /* fonts */
   import("typeface-muli");
   import("typeface-montserrat");
-  // import("typeface-libre-franklin");
-  // import("typeface-roboto");
   // init the router
   router();
 });
