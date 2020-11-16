@@ -23,6 +23,10 @@ body {
   font-family: "Muli", "Roboto", "Helvetica Neue", "Helvetica", "Arial Nue", "Arial", "sans-serif";
 }
 
+.panel div {
+  margin: 0;
+}
+
 .logo {
   background: url("../images/icon.png") 100% center no-repeat;
   background-size: contain;
@@ -195,6 +199,19 @@ button {
       font-size: 2rem;
       line-height: 4rem;
       color: var(--app-text);
+    }
+  }
+}
+
+.footer {
+  margin: 1rem auto;
+  min-width: 13rem;
+  max-width: 75rem;
+
+  .links {
+    a {
+      display: inline-block;
+      margin: 0 1rem 0 0;
     }
   }
 }

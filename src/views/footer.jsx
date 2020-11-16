@@ -8,7 +8,7 @@ class Footer extends Elements.Component {
   render() {
     return (
       <footer id="footer" name="footer" className="footer">
-        <div class="links">
+        <div className="links">
           <nav>
             <a href="#">Solutions</a>
             <a href="#">Products</a>
@@ -16,7 +16,7 @@ class Footer extends Elements.Component {
             <a href="#">Blog</a>
           </nav>
         </div>
-        <div class="copy">
+        <div className="copy">
           <p>© Copyright 2020 SemanticClarity. All Rights Reserved.</p>
         </div>
       </footer>
