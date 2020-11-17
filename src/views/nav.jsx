@@ -8,6 +8,10 @@ class HamburgerMenu extends BaseHamburgerMenu {
     console.debug("menu click - home");
     window.location = "#home";
   };
+
+  solutions() {
+    window.location = "#solutions";
+  };
 };
 
 export default HamburgerMenu;
