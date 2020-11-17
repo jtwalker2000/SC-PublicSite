@@ -1,7 +1,7 @@
 {
   "name": "@semanticclarity/sc-publicsite",
   "displayVersion": "Semantic Clarity",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "The Semantic Clarity Public site SPA",
   "main": "index.jsx",
   "scripts": {
